@@ -31,9 +31,7 @@ import {
 } from './src/hooks/useNotifications';
 
 // 백그라운드/종료 상태 메시지 수신
-messaging().setBackgroundMessageHandler(async remoteMessage => {
-  console.log('Background message:', remoteMessage);
-});
+messaging().setBackgroundMessageHandler(async _remoteMessage => {});
 
 const adUnitId = __DEV__
   ? TestIds.BANNER
